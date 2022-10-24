@@ -61,7 +61,7 @@ fn _control_structure() {
 
     println!("The value of y is: {}", y);
 
-    let x = plus_one(5);
+    let x = _plus_one(5);
 
     println!("The value of x is: {}", x);
 
@@ -96,13 +96,8 @@ fn _control_structure() {
     println!("LIFTOFF!!!");
 }
 
-fn plus_one(x: i32) -> i32 {
+fn _plus_one(x: i32) -> i32 {
     x + 1
-}
-
-fn main() {
-    println!("80 F is {} C", fahrenheit2celsius(80.0));
-    println!("The 13th Fibonacci number is {}", fib(13));
 }
 
 fn fahrenheit2celsius(n: f64) -> f64 {
@@ -115,4 +110,9 @@ fn fib(n: i32) -> i32 {
         1 => 1,
         n => fib(n - 2) + fib(n - 1),
     }
+}
+
+fn main() {
+    println!("80 F is {} C", fahrenheit2celsius(80.0));
+    println!("The 13th Fibonacci number is {}", fib(13));
 }
