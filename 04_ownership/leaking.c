@@ -8,9 +8,10 @@ int main() {
   int i = 0;
   char *str;
 
-  while (i < QUITE_SHORT) {
+  while (i < VERY_LONG) {
     printf("run %d\n", i);
     str = malloc(4096 * sizeof(char));
+    free(str);
     free(str);
     i++;
   }
